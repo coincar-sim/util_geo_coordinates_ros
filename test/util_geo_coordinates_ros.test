@@ -1,0 +1,16 @@
+<launch>
+
+<!-- Publish the NavSatFix -->
+<node pkg="rostopic" type="rostopic" name="NavSatFixPublisher" args="pub -r 1
+/nav_sat_fix_topic
+sensor_msgs/NavSatFix
+'{'\
+'header: {seq: 0, stamp: 0, frame_id: 'origin'}, '\
+'latitude: 49.01439 ,'\
+'longitude: 8.41722 ,'\
+'}'" output="screen">
+</node>
+
+<test test-name="test_util_geo_coordinates_ros" pkg="util_geo_coordinates_ros" type="util_geo_coordinates_ros-test" time-limit="20.0"/>
+
+</launch>
