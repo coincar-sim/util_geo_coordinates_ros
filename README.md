@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/coincar-sim/util_geo_coordinates_ros.svg)](https://travis-ci.org/coincar-sim/util_geo_coordinates_ros)
+
 # util_geo_coordinates_ros
 
 Library providing the conversion between geodetic (latitude/ longitude) and Cartesian (easting x/ northing y) coordinates.
